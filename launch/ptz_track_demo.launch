@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="ptz_track_demo" pkg="ptz_track_demo" type="ptz_track_demo.py" output="screen">
+    <remap from="obj_point" to="/obj_point"/>
+    <remap from="pan_tilt_cmd" to="/pan_tilt_driver_node/pan_tilt_cmd"/>
+  </node>
+
+</launch> 
